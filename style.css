@@ -27,10 +27,10 @@
 }
 
 #secs {
-  top: 45%;
-  font-size: 7rem;
-  color: #404040;
-  filter: drop-shadow(1px 1px 30px black);
+  top: 40%;
+  font-size: 8rem;
+  color: #262626;
+  filter: drop-shadow(5px 5px 50px white);
 }
 
 .hidden {

@@ -1,3 +1,8 @@
+#heading {
+  font-size: 3.5rem;
+  color: black;
+}
+
 #mins {
   font-size: 22rem;
   color: black;
@@ -9,21 +14,25 @@
 #increment {
   position: absolute;
   margin: 0;
-  top: 44%;
+  top: 47%;
   left: 22%;
   font-size: 5rem;
   width: 7rem;
-  filter: drop-shadow(1px 1px 15px black);
+  filter: drop-shadow(5px 5px 20px black);
 }
-
+#increment:active,
+#decrement:active,
+#timerEntry:active {
+  filter: drop-shadow(0px 0px 0px black);
+}
 #decrement,
 #secs {
   position: absolute;
-  top: 44%;
+  top: 47%;
   right: 22%;
   font-size: 5rem;
   width: 7rem;
-  filter: drop-shadow(1px 1px 15px black);
+  filter: drop-shadow(5px 5px 20px black);
 }
 
 #secs {

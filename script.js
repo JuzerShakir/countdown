@@ -36,7 +36,7 @@ const showMins = (m) => {
 // ? To let user manually enter countdown minutes
 timerEntry.addEventListener("click", () => {
   const m = parseInt(prompt("Enter Minutes"));
-  if (!isNaN(m)) setShowMins(parseInt(m));
+  if (!isNaN(m)) setShowMins(m);
 });
 
 // ? changes the state of the UI once the time starts or finishes
@@ -75,7 +75,7 @@ function setCookie() {
 
 // ? Checks if user has previous pending countdowns
 const timerCookie = JSON.parse(localStorage.getItem("userTimer"));
-// * then it loads prevoius countdown
+// * then it loads previous countdown
 if (timerCookie) {
   mins = timerCookie.mins;
   secs = timerCookie.secs;
@@ -104,7 +104,7 @@ function startCountdown() {
     timerTicking.pause();
     timesUp.play();
     resetTimer();
-    // ? else if it decreases 1 min if seconds is fully divisible by 60 secs
+    // ? or min decreases by 1 if seconds is fully divisible by 60
   } else if (secs % 60 === 0) {
     mins = mins - 1;
     showMins(mins);
@@ -114,13 +114,11 @@ function startCountdown() {
 // * to trigger to start the countdown
 document.addEventListener("keyup", (e) => {
   //   console.log(e.key);
-  if (e.key === "s" && timerOn === false) {
-    if (mins > 0) {
-      switchState();
-      timerTicking.play();
-      countdown = setInterval(startCountdown, 1000);
-      // console.log(countdown);
-    }
+  if (e.key === "s" && timerOn === false && mins > 0) {
+    switchState();
+    timerTicking.play();
+    countdown = setInterval(startCountdown, 1000);
+    // console.log(countdown);
   }
 });
 

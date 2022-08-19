@@ -1,0 +1,120 @@
+#mins {
+  font-size: 22rem;
+  color: black;
+  /* text-align: center; */
+}
+#timerEntry {
+  filter: drop-shadow(1px 1px 5px black);
+}
+#increment {
+  position: absolute;
+  margin: 0;
+  top: 44%;
+  left: 22%;
+  font-size: 5rem;
+  width: 7rem;
+  filter: drop-shadow(1px 1px 15px black);
+}
+
+#decrement,
+#secs {
+  position: absolute;
+  top: 44%;
+  right: 22%;
+  font-size: 5rem;
+  width: 7rem;
+  filter: drop-shadow(1px 1px 15px black);
+}
+
+#secs {
+  top: 45%;
+  font-size: 7rem;
+  color: #404040;
+  filter: drop-shadow(1px 1px 30px black);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* ///////////////////////////////////////// */
+/* Load Animations */
+#mins,
+#increment,
+#decrement,
+#secs,
+#timerEntry {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* //////////////////////////////////// */
+/* background transitioning */
+/* body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+} */
+
+body {
+  background: linear-gradient(
+    -45deg,
+    #f11d28,
+    #fd3a2d,
+    #fe612c,
+    #ff872c,
+    #ffa12c,
+    #fed883,
+    #fdb25f,
+    #f15b67,
+    #cf2967,
+    #9f265c,
+    #631c48,
+    #502c5e,
+    #68306e,
+    #8f3163,
+    #c43e47,
+    #f56725,
+    #fd9a01,
+    #fd6104,
+    #ff2c05,
+    #f00505
+  );
+  background-size: 400% 400%;
+  animation: gradient 120s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

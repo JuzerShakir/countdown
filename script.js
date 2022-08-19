@@ -11,7 +11,7 @@ const resetButton = document.getElementById("reset");
 
 // ? Make audio available
 const timesUp = new Audio("alerts/times_up.wav");
-const timesTicking = new Audio("alerts/timer_ticking.wav");
+const timerTicking = new Audio("alerts/timer_ticking.wav");
 
 // ? State varaibles
 let timerOn = false;
@@ -101,6 +101,7 @@ function startCountdown() {
   // ? resets the timer if 0 seconds are left
   if (secs === 0) {
     clearInterval(countdown);
+    timerTicking.pause();
     timesUp.play();
     resetTimer();
     // ? else if it decreases 1 min if seconds is fully divisible by 60 secs
@@ -116,7 +117,7 @@ document.addEventListener("keyup", (e) => {
   if (e.key === "s" && timerOn === false) {
     if (mins > 0) {
       switchState();
-      timesTicking.play();
+      timerTicking.play();
       countdown = setInterval(startCountdown, 1000);
       // console.log(countdown);
     }
@@ -144,11 +145,11 @@ function pauseResumeTimer() {
   // console.log("clicked");
   paused = paused ? false : true;
   if (paused) {
-    timesTicking.pause();
+    timerTicking.pause();
     clearInterval(countdown);
     setResumeButton();
   } else {
-    timesTicking.play();
+    timerTicking.play();
     countdown = setInterval(startCountdown, 1000);
     setPauseButton();
   }

@@ -4,7 +4,7 @@
 }
 
 #mins {
-  font-size: 22rem;
+  font-size: 17rem;
   color: black;
   /* text-align: center; */
 }
@@ -16,23 +16,25 @@
   margin: 0;
   top: 47%;
   left: 22%;
-  font-size: 5rem;
+  font-size: 4rem;
   width: 7rem;
   filter: drop-shadow(5px 5px 20px black);
 }
-#increment:active,
-#decrement:active,
-#timerEntry:active {
-  filter: drop-shadow(0px 0px 0px black);
-}
+
 #decrement,
 #secs {
   position: absolute;
   top: 47%;
   right: 22%;
-  font-size: 5rem;
+  font-size: 4rem;
   width: 7rem;
   filter: drop-shadow(5px 5px 20px black);
+}
+
+#increment:active,
+#decrement:active,
+#timerEntry:active {
+  filter: drop-shadow(0px 0px 0px black);
 }
 
 #secs {

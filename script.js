@@ -2,6 +2,7 @@
 
 // ? Extracting all HTML elements to work with
 const timerEntry = document.getElementById("timerEntry");
+const instructions = document.getElementById("instructions");
 const incrementButton = document.getElementById("increment");
 const decrementButton = document.getElementById("decrement");
 const minsDisplay = document.getElementById("mins");
@@ -46,7 +47,7 @@ const switchState = () => {
   decrementButton.classList.toggle("hidden");
   incrementButton.classList.toggle("hidden");
   pauseResumeButton.classList.toggle("hidden");
-  timerEntry.classList.toggle("hidden");
+  instructions.classList.toggle("hidden");
   secsDisplay.classList.toggle("hidden");
   secsDisplay.textContent = "";
 };

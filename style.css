@@ -4,30 +4,43 @@
 }
 
 #mins {
-  font-size: 17rem;
+  font-size: 15rem;
   color: black;
-  /* text-align: center; */
 }
+
+#secs {
+  position: absolute;
+  top: 40%;
+  right: 22%;
+  font-size: 6rem;
+  color: #262626;
+  filter: drop-shadow(5px 5px 50px white);
+}
+
 #timerEntry {
   filter: drop-shadow(1px 1px 5px black);
 }
 #increment {
   position: absolute;
   margin: 0;
+  padding: 0;
   top: 47%;
   left: 22%;
-  font-size: 4rem;
-  width: 7rem;
+  font-size: 5vw;
+  width: 7%;
+  height: 15%;
   filter: drop-shadow(5px 5px 20px black);
 }
 
-#decrement,
-#secs {
+#decrement {
   position: absolute;
+  margin: 0;
+  padding: 0;
   top: 47%;
   right: 22%;
-  font-size: 4rem;
-  width: 7rem;
+  font-size: 5vw;
+  width: 7%;
+  height: 15%;
   filter: drop-shadow(5px 5px 20px black);
 }
 
@@ -35,13 +48,6 @@
 #decrement:active,
 #timerEntry:active {
   filter: drop-shadow(0px 0px 0px black);
-}
-
-#secs {
-  top: 40%;
-  font-size: 8rem;
-  color: #262626;
-  filter: drop-shadow(5px 5px 50px white);
 }
 
 .hidden {

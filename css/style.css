@@ -77,7 +77,7 @@ body {
 
 .time {
   display: grid;
-  grid-template-columns: 1fr max-content 1fr;
+  grid-template-columns: [left-start] 1fr [left-end center-start] max-content [center-end right-start] 1fr [right-end];
   align-items: center;
   justify-items: center;
   grid-row-gap: 5dvh;
@@ -107,8 +107,8 @@ body {
 
 #increment {
   font-size: 4.5rem;
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
+  grid-column: left-start;
+  grid-row: 2;
   justify-self: right; }
   @media only screen and (max-width: 50em) {
     #increment {
@@ -118,8 +118,8 @@ body {
   font-size: 20rem;
   font-weight: 600;
   color: #1c1c1c;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3; }
+  grid-column: center-start;
+  grid-row: 2; }
   @media only screen and (max-width: 50em) {
     #mins {
       font-size: 17rem;
@@ -127,8 +127,8 @@ body {
 
 #decrement {
   font-size: 4.5rem;
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
+  grid-column: right-start;
+  grid-row: 2;
   justify-self: left; }
   @media only screen and (max-width: 50em) {
     #decrement {
@@ -136,26 +136,26 @@ body {
 
 #start {
   font-size: 2.5rem;
-  grid-column: 2 / 3;
-  grid-row: 3 / 4; }
+  grid-column: center-start;
+  grid-row: 3; }
 
 #secs {
   font-size: 7rem;
   font-weight: 300;
   color: #2b2b2b;
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
+  grid-column: right-start;
+  grid-row: 2;
   justify-self: left; }
 
 #pause {
   font-size: 2.5rem;
-  grid-column: 2 / 3;
-  grid-row: 3 / 4; }
+  grid-column: center-start;
+  grid-row: 3; }
 
 #reset {
   font-size: 2.5rem;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2; }
+  grid-column: center-start;
+  grid-row: 1; }
 
 #mins,
 #increment,

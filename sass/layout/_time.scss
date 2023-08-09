@@ -12,8 +12,8 @@
     font-size: 4rem;
   }
 
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
+  grid-column: left-start;
+  grid-row: 2;
   justify-self: right;
 }
 
@@ -27,8 +27,8 @@
     font-weight: 500;
   }
 
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
+  grid-column: center-start;
+  grid-row: 2;
 }
 
 #decrement {
@@ -38,16 +38,16 @@
     font-size: 4rem;
   }
 
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
+  grid-column: right-start;
+  grid-row: 2;
   justify-self: left;
 }
 
 #start {
   font-size: 2.5rem;
 
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
+  grid-column: center-start;
+  grid-row: 3;
 }
 
 #secs {
@@ -55,23 +55,23 @@
   font-weight: 300;
   color: $color-black;
 
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
+  grid-column: right-start;
+  grid-row: 2;
   justify-self: left;
 }
 
 #pause {
   font-size: 2.5rem;
 
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
+  grid-column: center-start;
+  grid-row: 3;
 }
 
 #reset {
   font-size: 2.5rem;
 
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
+  grid-column: center-start;
+  grid-row: 1;
 }
 
 #mins,

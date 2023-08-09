@@ -47,7 +47,7 @@ body {
 
 .time {
   display: grid;
-  grid-template-columns: 1fr max-content 1fr;
+  grid-template-columns: [left-start] 1fr [left-end center-start] max-content [center-end right-start] 1fr [right-end];
   align-items: center;
   justify-items: center;
   grid-row-gap: 5dvh;

@@ -1,3 +1,6 @@
+@import "animations";
+@import "base";
+
 #heading {
   font-size: 3.5rem;
   color: black;
@@ -64,62 +67,4 @@
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-}
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/* //////////////////////////////////// */
-/* background transitioning */
-/* body {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  height: 100vh;
-} */
-
-body {
-  background: linear-gradient(
-    -45deg,
-    #f11d28,
-    #fd3a2d,
-    #fe612c,
-    #ff872c,
-    #ffa12c,
-    #fed883,
-    #fdb25f,
-    #f15b67,
-    #cf2967,
-    #9f265c,
-    #631c48,
-    #502c5e,
-    #68306e,
-    #8f3163,
-    #c43e47,
-    #f56725,
-    #fd9a01,
-    #fd6104,
-    #ff2c05,
-    #f00505
-  );
-  background-size: 400% 400%;
-  animation: gradient 120s ease infinite;
-  height: 100vh;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }

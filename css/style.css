@@ -1,0 +1,79 @@
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+body {
+  background: linear-gradient(-45deg, #f11d28, #fd3a2d, #fe612c, #ff872c, #ffa12c, #fed883, #fdb25f, #f15b67, #cf2967, #9f265c, #631c48, #502c5e, #68306e, #8f3163, #c43e47, #f56725, #fd9a01, #fd6104, #ff2c05, #f00505);
+  background-size: 400% 400%;
+  animation: gradient 120s ease infinite;
+  height: 100vh; }
+
+#heading {
+  font-size: 3.5rem;
+  color: black; }
+
+#mins {
+  font-size: 15rem;
+  color: black; }
+
+#secs {
+  position: absolute;
+  top: 40%;
+  right: 22%;
+  font-size: 6rem;
+  color: #262626;
+  filter: drop-shadow(5px 5px 50px white); }
+
+#timerEntry {
+  filter: drop-shadow(1px 1px 5px black); }
+
+#increment {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 47%;
+  left: 22%;
+  font-size: 5vw;
+  width: 7%;
+  height: 15%;
+  filter: drop-shadow(5px 5px 20px black); }
+
+#decrement {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 47%;
+  right: 22%;
+  font-size: 5vw;
+  width: 7%;
+  height: 15%;
+  filter: drop-shadow(5px 5px 20px black); }
+
+#increment:active,
+#decrement:active,
+#timerEntry:active {
+  filter: drop-shadow(0px 0px 0px black); }
+
+.hidden {
+  visibility: hidden; }
+
+/* ///////////////////////////////////////// */
+/* Load Animations */
+#mins,
+#increment,
+#decrement,
+#secs,
+#timerEntry {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }

@@ -12,9 +12,9 @@ html {
   font-size: 62.5%;
   // 62.5 percent of 16px = 10px | We need font size of 10px.
 
-  @include respond(big-phone) {
-    font-size: 50%;
-  }
+  // @include respond(big-phone) {
+  //   font-size: 50%;
+  // }
 }
 
 body {
@@ -58,11 +58,12 @@ body {
   grid-column-gap: 7vw;
 
   @include respond(tab-port) {
-    grid-gap: 5vw;
+    grid-column-gap: 5vw;
+    grid-row-gap: 7dvh;
   }
 
   @include respond(small-phone) {
     grid-column-gap: 3vw;
-    grid-row-gap: 8dvh;
+    grid-row-gap: 9dvh;
   }
 }

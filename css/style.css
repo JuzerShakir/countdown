@@ -68,9 +68,6 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
-  @media only screen and (max-width: 37.5em) {
-    html {
-      font-size: 50%; } }
 
 body {
   font-family: "Nunito";
@@ -89,11 +86,12 @@ body {
   grid-column-gap: 7vw; }
   @media only screen and (max-width: 50em) {
     .time {
-      grid-gap: 5vw; } }
+      grid-column-gap: 5vw;
+      grid-row-gap: 7dvh; } }
   @media only screen and (max-width: 25em) {
     .time {
       grid-column-gap: 3vw;
-      grid-row-gap: 8dvh; } }
+      grid-row-gap: 9dvh; } }
 
 .heading {
   display: flex;
@@ -117,9 +115,6 @@ body {
   @media only screen and (max-width: 50em) {
     #increment {
       font-size: 4rem; } }
-  @media only screen and (max-width: 25em) {
-    #increment {
-      font-size: 3rem; } }
 
 #mins {
   font-size: 20rem;
@@ -131,10 +126,6 @@ body {
     #mins {
       font-size: 17rem;
       font-weight: 500; } }
-  @media only screen and (max-width: 25em) {
-    #mins {
-      font-size: 14rem;
-      font-weight: 400; } }
 
 #decrement {
   font-size: 4.5rem;
@@ -144,9 +135,6 @@ body {
   @media only screen and (max-width: 50em) {
     #decrement {
       font-size: 4rem; } }
-  @media only screen and (max-width: 25em) {
-    #decrement {
-      font-size: 3rem; } }
 
 #secs {
   font-size: 7rem;
@@ -155,9 +143,6 @@ body {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
   justify-self: left; }
-  @media only screen and (max-width: 25em) {
-    #secs {
-      font-size: 5rem; } }
 
 #pause {
   grid-column: 2 / 3;

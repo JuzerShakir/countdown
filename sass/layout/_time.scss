@@ -6,15 +6,16 @@
 }
 
 #increment {
-  font-size: 7rem;
+  font-size: 4.5rem;
   font-weight: 500;
 
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  justify-self: right;
 }
 
 #mins {
-  font-size: 15rem;
+  font-size: 20rem;
   font-weight: 600;
   color: $color-black-dark;
 
@@ -23,11 +24,12 @@
 }
 
 #decrement {
-  font-size: 7rem;
+  font-size: 4.5rem;
   font-weight: 500;
 
   grid-column: 3 / 4;
   grid-row: 2 / 3;
+  justify-self: left;
 }
 
 #secs {
@@ -37,6 +39,7 @@
 
   grid-column: 3 / 4;
   grid-row: 2 / 3;
+  justify-self: left;
 }
 
 #pause {

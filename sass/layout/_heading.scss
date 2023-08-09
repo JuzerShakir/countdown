@@ -6,6 +6,15 @@
   h1 {
     font-size: 5rem;
     font-weight: 700;
-    color: $color-black;
+    background-image: linear-gradient(
+      to right,
+      #e3fdfd,
+      #cbf1f5,
+      #a6e3e9,
+      #71c9ce
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 }

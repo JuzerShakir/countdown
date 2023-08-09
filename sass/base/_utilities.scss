@@ -1,5 +1,5 @@
 .btn {
-  background-color: $color-black;
+  background-color: $color-primary;
   color: #fff;
 
   border: none;
@@ -11,22 +11,18 @@
   transition: all 0.3s;
 
   &:hover {
-    background-color: $color-black-dark;
+    background-color: $color-primary-darker;
   }
 
   &--float {
-    filter: drop-shadow(5px 5px 20px $color-black-dark);
-
-    @include respond(tab-land) {
-      filter: drop-shadow(3px 3px 13px $color-black-dark);
-    }
+    filter: drop-shadow(2px 2px 10px $color-primary-dark);
 
     @include respond(big-phone) {
-      filter: drop-shadow(1px 1px 6px $color-black-dark);
+      filter: drop-shadow(1px 1px 6px $color-primary-dark);
     }
 
     &:active {
-      filter: drop-shadow(0px 0px 0px $color-black-dark);
+      filter: drop-shadow(0px 0px 0px $color-primary-dark);
     }
   }
 

@@ -1,5 +1,10 @@
+.time {
+  color: $color-primary-dark;
+}
+
 #timerEntry {
   font-size: 2.5rem;
+  color: inherit;
 
   grid-column: 2 / 3;
   grid-row: 1 / 2;
@@ -7,6 +12,7 @@
 
 #increment {
   font-size: 4.5rem;
+  color: inherit;
 
   @include respond(tab-port) {
     font-size: 4rem;
@@ -20,7 +26,7 @@
 #mins {
   font-size: 20rem;
   font-weight: 600;
-  color: $color-black-dark;
+  color: inherit;
 
   @include respond(tab-port) {
     font-size: 17rem;
@@ -33,6 +39,7 @@
 
 #decrement {
   font-size: 4.5rem;
+  color: inherit;
 
   @include respond(tab-port) {
     font-size: 4rem;
@@ -45,6 +52,7 @@
 
 #start {
   font-size: 2.5rem;
+  color: inherit;
 
   grid-column: center-start;
   grid-row: 3;
@@ -53,7 +61,7 @@
 #secs {
   font-size: 7rem;
   font-weight: 300;
-  color: $color-black;
+  color: $color-primary;
 
   grid-column: right-start;
   grid-row: 2;
@@ -62,6 +70,7 @@
 
 #pause {
   font-size: 2.5rem;
+  color: inherit;
 
   grid-column: center-start;
   grid-row: 3;
@@ -69,6 +78,7 @@
 
 #reset {
   font-size: 2.5rem;
+  color: inherit;
 
   grid-column: center-start;
   grid-row: 1;

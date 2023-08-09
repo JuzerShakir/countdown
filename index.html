@@ -25,40 +25,32 @@
     <title>Countdown</title>
   </head>
   <body>
-    <div class="d-block text-center">
-      <h1 id="heading">Countdown</h1>
-      <div id="instructions">
-        <p>Press 's' to start</p>
-        <button type="button" id="timerEntry" class="btn btn-dark btn-lg">
-          Enter Minutes Manually
+    <div>
+      <header class="heading">
+        <h1>Countdown</h1>
+      </header>
+
+      <main class="time">
+        <button type="button" id="timerEntry" class="btn btn--scale">
+          Enter Minutes
         </button>
-      </div>
-    </div>
 
-    <br />
-    <br />
+        <button type="button" id="increment" class="btn btn--float">+</button>
 
-    <div class="text-center">
-      <button type="button" id="increment" class="btn btn-dark btn-lg">
-        +
-      </button>
-      <span id="mins"></span>
-      <button type="button" id="decrement" class="btn btn-dark btn-lg">
-        -
-      </button>
-      <span id="secs" class="hidden"></span>
-    </div>
+        <span id="mins"></span>
 
-    <br />
-    <br />
+        <button type="button" id="decrement" class="btn btn--float">-</button>
 
-    <div class="text-center">
-      <button type="button" id="pause" class="btn btn-primary btn-lg hidden">
-        Pause
-      </button>
-      <button type="button" id="reset" class="btn btn-danger btn-lg hidden">
-        Reset
-      </button>
+        <span id="secs" class="hidden"></span>
+
+        <button type="button" id="pause" class="btn btn--scale hidden">
+          Pause
+        </button>
+
+        <button type="button" id="reset" class="btn btn--scale hidden">
+          Reset
+        </button>
+      </main>
     </div>
   </body>
 </html>

@@ -1,72 +1,8 @@
-@import "animations";
-@import "base";
+@import "abstract/variables";
+@import "abstract/animations";
 
-#heading {
-  font-size: 5rem;
-  font-weight: 600;
-  color: black;
-}
+@import "base/utilities";
+@import "base/base";
 
-#mins {
-  font-size: 15rem;
-  font-weight: 500;
-  color: black;
-}
-
-#secs {
-  position: absolute;
-  top: 40%;
-  right: 22%;
-  font-size: 6rem;
-  color: #262626;
-  filter: drop-shadow(5px 5px 50px white);
-}
-
-#timerEntry {
-  filter: drop-shadow(1px 1px 5px black);
-}
-#increment {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  top: 47%;
-  left: 22%;
-  font-size: 5vw;
-  width: 7%;
-  height: 15%;
-  filter: drop-shadow(5px 5px 20px black);
-}
-
-#decrement {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  top: 47%;
-  right: 22%;
-  font-size: 5vw;
-  width: 7%;
-  height: 15%;
-  filter: drop-shadow(5px 5px 20px black);
-}
-
-#increment:active,
-#decrement:active,
-#timerEntry:active {
-  filter: drop-shadow(0px 0px 0px black);
-}
-
-.hidden {
-  visibility: hidden;
-}
-
-/* ///////////////////////////////////////// */
-/* Load Animations */
-#mins,
-#increment,
-#decrement,
-#secs,
-#timerEntry {
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
+@import "layout/heading";
+@import "layout/time";

@@ -1,0 +1,11 @@
+.heading {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: $color-black;
+  }
+}

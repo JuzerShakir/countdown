@@ -1,0 +1,58 @@
+#timerEntry {
+  font-weight: 600;
+
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+#increment {
+  font-size: 7rem;
+  font-weight: 500;
+
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+#mins {
+  font-size: 15rem;
+  font-weight: 600;
+  color: $color-black-dark;
+
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+#decrement {
+  font-size: 7rem;
+  font-weight: 500;
+
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+#secs {
+  font-size: 7rem;
+  font-weight: 300;
+  color: $color-black;
+
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+#pause {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+#reset {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+#mins,
+#increment,
+#decrement,
+#secs,
+#timerEntry {
+  animation: fadeInAnimation 3s;
+}

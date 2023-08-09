@@ -1,0 +1,38 @@
+.btn {
+  background-color: $color-black;
+  color: #fff;
+
+  border: none;
+  border-radius: 2rem;
+
+  font-size: 1.5rem;
+  text-transform: uppercase;
+
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $color-black-dark;
+  }
+
+  &--float {
+    filter: drop-shadow(5px 5px 20px $color-black-dark);
+
+    &:active {
+      filter: drop-shadow(0px 0px 0px $color-black-dark);
+    }
+  }
+
+  &--scale {
+    &:hover {
+      font-size: 1.55rem;
+      transform: scale(1.05);
+    }
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}

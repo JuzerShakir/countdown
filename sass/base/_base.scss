@@ -45,3 +45,13 @@ body {
   animation: gradient 120s ease infinite;
   height: 100vh;
 }
+
+.time {
+  display: grid;
+  grid-template-columns: 1fr 50vw 1fr;
+  grid-row-gap: 7rem;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  // align-content: center;
+}

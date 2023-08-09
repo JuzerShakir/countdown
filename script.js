@@ -114,8 +114,7 @@ function startCountdown() {
 }
 
 // * to trigger to start the countdown
-startBtn.addEventListener("click", (e) => {
-  //   console.log(e.key);
+startBtn.addEventListener("click", () => {
   if (timerOn === false && mins > 0) {
     switchState();
     timerTicking.play();

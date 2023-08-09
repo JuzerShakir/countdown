@@ -161,5 +161,6 @@ body {
 #increment,
 #decrement,
 #secs,
-#timerEntry {
+#timerEntry,
+#start {
   animation: fadeInAnimation 3s; }

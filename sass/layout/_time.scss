@@ -1,5 +1,5 @@
 #timerEntry {
-  font-weight: 600;
+  font-size: 2.5rem;
 
   grid-column: 2 / 3;
   grid-row: 1 / 2;
@@ -56,6 +56,13 @@
   justify-self: left;
 }
 
+#start {
+  font-size: 2.5rem;
+
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
 #secs {
   font-size: 7rem;
   font-weight: 300;
@@ -71,11 +78,15 @@
 }
 
 #pause {
+  font-size: 2.5rem;
+
   grid-column: 2 / 3;
   grid-row: 3 / 4;
 }
 
 #reset {
+  font-size: 2.5rem;
+
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 }

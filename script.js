@@ -4,6 +4,7 @@
 const timerEntry = document.getElementById("timerEntry");
 const incrementButton = document.getElementById("increment");
 const decrementButton = document.getElementById("decrement");
+const startBtn = document.getElementById("start");
 const minsDisplay = document.getElementById("mins");
 const secsDisplay = document.getElementById("secs");
 const pauseResumeButton = document.getElementById("pause");
@@ -13,7 +14,7 @@ const resetButton = document.getElementById("reset");
 const timesUp = new Audio("alerts/times_up.wav");
 const timerTicking = new Audio("alerts/timer_ticking.wav");
 
-// ? State varaibles
+// ? State variables
 let timerOn = false;
 let paused = false;
 let countdown;
@@ -45,6 +46,7 @@ const switchState = () => {
   // console.log(timerOn);
   decrementButton.classList.toggle("hidden");
   incrementButton.classList.toggle("hidden");
+  startBtn.classList.toggle("hidden");
   pauseResumeButton.classList.toggle("hidden");
   timerEntry.classList.toggle("hidden");
   secsDisplay.classList.toggle("hidden");
@@ -112,9 +114,9 @@ function startCountdown() {
 }
 
 // * to trigger to start the countdown
-document.addEventListener("keyup", (e) => {
+startBtn.addEventListener("click", (e) => {
   //   console.log(e.key);
-  if (e.key === "s" && timerOn === false && mins > 0) {
+  if (timerOn === false && mins > 0) {
     switchState();
     timerTicking.play();
     countdown = setInterval(startCountdown, 1000);

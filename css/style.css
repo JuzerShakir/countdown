@@ -12,6 +12,13 @@
   100% {
     opacity: 1; } }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
 body {
   background: linear-gradient(-45deg, #f11d28, #fd3a2d, #fe612c, #ff872c, #ffa12c, #fed883, #fdb25f, #f15b67, #cf2967, #9f265c, #631c48, #502c5e, #68306e, #8f3163, #c43e47, #f56725, #fd9a01, #fd6104, #ff2c05, #f00505);
   background-size: 400% 400%;

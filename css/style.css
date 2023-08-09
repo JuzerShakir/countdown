@@ -1,3 +1,19 @@
+/*
+0 - 400px:          Small Phone
+400 - 600px:        Big Phone
+600 - 800px:        Tablet portrait
+800 - 1000px:       Tablet landscape
+1000px - 1200px:    Laptop
+1200 - 1800:        is where our normal styles apply
+*/
+/*
+- phone
+- tab-port
+- tab-land
+- laptop
+
+1em = 16px
+*/
 @keyframes gradient {
   0% {
     background-position: 0% 50%; }
@@ -26,11 +42,18 @@
     background-color: #1c1c1c; }
   .btn--float {
     filter: drop-shadow(5px 5px 20px #1c1c1c); }
+    @media only screen and (max-width: 62.5em) {
+      .btn--float {
+        filter: drop-shadow(3px 3px 13px #1c1c1c); } }
+    @media only screen and (max-width: 37.5em) {
+      .btn--float {
+        filter: drop-shadow(1px 1px 6px #1c1c1c); } }
     .btn--float:active {
       filter: drop-shadow(0px 0px 0px #1c1c1c); }
-  .btn--scale:hover {
-    font-size: 1.55rem;
-    transform: scale(1.05); }
+  @media only screen and (min-width: 50em) {
+    .btn--scale:hover {
+      font-size: 1.55rem;
+      transform: scale(1.05); } }
 
 .hidden {
   visibility: hidden; }
@@ -45,6 +68,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Nunito";
@@ -52,16 +78,22 @@ body {
   line-height: 1.6;
   background: linear-gradient(-45deg, #f11d28, #fd3a2d, #fe612c, #ff872c, #ffa12c, #fed883, #fdb25f, #f15b67, #cf2967, #9f265c, #631c48, #502c5e, #68306e, #8f3163, #c43e47, #f56725, #fd9a01, #fd6104, #ff2c05, #f00505);
   background-size: 400% 400%;
-  animation: gradient 120s ease infinite;
-  height: 100vh; }
+  animation: gradient 120s ease infinite; }
 
 .time {
   display: grid;
-  grid-template-columns: 1fr 50vw 1fr;
-  grid-row-gap: 7rem;
+  grid-template-columns: 1fr max-content 1fr;
   align-items: center;
   justify-items: center;
-  justify-content: center; }
+  grid-row-gap: 5dvh;
+  grid-column-gap: 7vw; }
+  @media only screen and (max-width: 50em) {
+    .time {
+      grid-gap: 5vw; } }
+  @media only screen and (max-width: 25em) {
+    .time {
+      grid-column-gap: 3vw;
+      grid-row-gap: 8dvh; } }
 
 .heading {
   display: flex;
@@ -78,30 +110,54 @@ body {
   grid-row: 1 / 2; }
 
 #increment {
-  font-size: 7rem;
-  font-weight: 500;
+  font-size: 4.5rem;
   grid-column: 1 / 2;
-  grid-row: 2 / 3; }
+  grid-row: 2 / 3;
+  justify-self: right; }
+  @media only screen and (max-width: 50em) {
+    #increment {
+      font-size: 4rem; } }
+  @media only screen and (max-width: 25em) {
+    #increment {
+      font-size: 3rem; } }
 
 #mins {
-  font-size: 15rem;
+  font-size: 20rem;
   font-weight: 600;
   color: #1c1c1c;
   grid-column: 2 / 3;
   grid-row: 2 / 3; }
+  @media only screen and (max-width: 50em) {
+    #mins {
+      font-size: 17rem;
+      font-weight: 500; } }
+  @media only screen and (max-width: 25em) {
+    #mins {
+      font-size: 14rem;
+      font-weight: 400; } }
 
 #decrement {
-  font-size: 7rem;
-  font-weight: 500;
+  font-size: 4.5rem;
   grid-column: 3 / 4;
-  grid-row: 2 / 3; }
+  grid-row: 2 / 3;
+  justify-self: left; }
+  @media only screen and (max-width: 50em) {
+    #decrement {
+      font-size: 4rem; } }
+  @media only screen and (max-width: 25em) {
+    #decrement {
+      font-size: 3rem; } }
 
 #secs {
   font-size: 7rem;
   font-weight: 300;
   color: #2b2b2b;
   grid-column: 3 / 4;
-  grid-row: 2 / 3; }
+  grid-row: 2 / 3;
+  justify-self: left; }
+  @media only screen and (max-width: 25em) {
+    #secs {
+      font-size: 5rem; } }
 
 #pause {
   grid-column: 2 / 3;

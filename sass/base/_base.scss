@@ -11,6 +11,10 @@ html {
   // By default the users browser font size is set to 16px.
   font-size: 62.5%;
   // 62.5 percent of 16px = 10px | We need font size of 10px.
+
+  @include respond(big-phone) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -43,15 +47,22 @@ body {
   );
   background-size: 400% 400%;
   animation: gradient 120s ease infinite;
-  height: 100vh;
 }
 
 .time {
   display: grid;
-  grid-template-columns: 1fr 50vw 1fr;
-  grid-row-gap: 7rem;
+  grid-template-columns: 1fr max-content 1fr;
   align-items: center;
   justify-items: center;
-  justify-content: center;
-  // align-content: center;
+  grid-row-gap: 5dvh;
+  grid-column-gap: 7vw;
+
+  @include respond(tab-port) {
+    grid-gap: 5vw;
+  }
+
+  @include respond(small-phone) {
+    grid-column-gap: 3vw;
+    grid-row-gap: 8dvh;
+  }
 }

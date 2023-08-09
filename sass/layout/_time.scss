@@ -7,7 +7,14 @@
 
 #increment {
   font-size: 4.5rem;
-  font-weight: 500;
+
+  @include respond(tab-port) {
+    font-size: 4rem;
+  }
+
+  @include respond(small-phone) {
+    font-size: 3rem;
+  }
 
   grid-column: 1 / 2;
   grid-row: 2 / 3;
@@ -19,13 +26,30 @@
   font-weight: 600;
   color: $color-black-dark;
 
+  @include respond(tab-port) {
+    font-size: 17rem;
+    font-weight: 500;
+  }
+
+  @include respond(small-phone) {
+    font-size: 14rem;
+    font-weight: 400;
+  }
+
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
 
 #decrement {
   font-size: 4.5rem;
-  font-weight: 500;
+
+  @include respond(tab-port) {
+    font-size: 4rem;
+  }
+
+  @include respond(small-phone) {
+    font-size: 3rem;
+  }
 
   grid-column: 3 / 4;
   grid-row: 2 / 3;
@@ -36,6 +60,10 @@
   font-size: 7rem;
   font-weight: 300;
   color: $color-black;
+
+  @include respond(small-phone) {
+    font-size: 5rem;
+  }
 
   grid-column: 3 / 4;
   grid-row: 2 / 3;

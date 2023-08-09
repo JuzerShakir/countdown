@@ -6,6 +6,13 @@
   box-sizing: inherit;
 }
 
+html {
+  box-sizing: border-box;
+  // By default the users browser font size is set to 16px.
+  font-size: 62.5%;
+  // 62.5 percent of 16px = 10px | We need font size of 10px.
+}
+
 body {
   background: linear-gradient(
     -45deg,

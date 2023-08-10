@@ -32,12 +32,24 @@
   font-size: 30dvh;
   font-weight: 600;
 
-  @include respond(big-phone) {
+  @include respond(laptop) {
     font-size: 25dvh;
   }
 
+  @include respond(tab-land) {
+    font-size: 20dvh;
+  }
+
+  @include respond(tab-port) {
+    font-size: 15dvh;
+  }
+
+  @include respond(big-phone) {
+    font-size: 12dvh;
+  }
+
   @include respond(small-phone) {
-    font-size: 18dvh;
+    font-size: 9dvh;
   }
 
   grid-column: center-start;

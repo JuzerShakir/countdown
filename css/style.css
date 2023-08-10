@@ -39,14 +39,18 @@
   .btn--float {
     padding: 2rem;
     font-size: 8dvh; }
+    @media only screen and (max-width: 50em) {
+      .btn--float {
+        padding: 0.4rem 1.3rem;
+        font-size: 7.5dvh; } }
     @media only screen and (max-width: 37.5em) {
       .btn--float {
-        padding: 0.7rem 1.3rem;
-        font-size: 7.5dvh; } }
+        padding: 0rem 1rem;
+        font-size: 6dvh; } }
     @media only screen and (max-width: 25em) {
       .btn--float {
-        padding: 0.2rem 1.2rem;
-        font-size: 6dvh; } }
+        padding: 0 0.5rem;
+        font-size: 3.5dvh; } }
     @media only screen and (min-width: 62.5em) {
       .btn--float {
         filter: drop-shadow(2px 2px 10px #0196a6); }
@@ -57,14 +61,17 @@
   .btn--scale {
     padding: 1.3rem;
     font-size: 5dvh; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 50em) {
       .btn--scale {
         padding: 1rem;
         font-size: 4dvh; } }
+    @media only screen and (max-width: 37.5em) {
+      .btn--scale {
+        font-size: 3dvh; } }
     @media only screen and (max-width: 25em) {
       .btn--scale {
-        padding: 0.7rem;
-        font-size: 3dvh; } }
+        padding: 0.8rem;
+        font-size: 2.5dvh; } }
     @media only screen and (min-width: 62.5em) {
       .btn--scale:hover {
         transform: scale(1.03); } }
@@ -138,12 +145,21 @@ body {
   font-weight: 600;
   grid-column: center-start;
   grid-row: 2; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 75em) {
     #mins {
       font-size: 25dvh; } }
+  @media only screen and (max-width: 62.5em) {
+    #mins {
+      font-size: 20dvh; } }
+  @media only screen and (max-width: 50em) {
+    #mins {
+      font-size: 15dvh; } }
+  @media only screen and (max-width: 37.5em) {
+    #mins {
+      font-size: 12dvh; } }
   @media only screen and (max-width: 25em) {
     #mins {
-      font-size: 18dvh; } }
+      font-size: 9dvh; } }
 
 #decrement {
   grid-column: right-start;

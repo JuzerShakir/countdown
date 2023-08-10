@@ -36,16 +36,14 @@
   padding: 1.8rem 3rem;
   cursor: pointer;
   transition: all 0.3s; }
-  .btn:hover {
-    background-color: #005862; }
-  .btn--float {
-    filter: drop-shadow(2px 2px 10px #0196a6); }
-    @media only screen and (max-width: 37.5em) {
-      .btn--float {
-        filter: drop-shadow(1px 1px 6px #0196a6); } }
-    .btn--float:active {
-      filter: drop-shadow(0px 0px 0px #0196a6); }
-  @media only screen and (min-width: 50em) {
+  @media only screen and (min-width: 62.5em) {
+    .btn--float {
+      filter: drop-shadow(2px 2px 10px #0196a6); }
+      .btn--float:hover {
+        background-color: #005862; }
+      .btn--float:active {
+        filter: drop-shadow(0px 0px 0px #0196a6); } }
+  @media only screen and (min-width: 62.5em) {
     .btn--scale:hover {
       font-size: 1.55rem;
       transform: scale(1.05); } }

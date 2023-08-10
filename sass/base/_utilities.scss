@@ -13,11 +13,17 @@
 
   // * Styling for + & - buttons
   &--float {
-    padding: 1rem 1.5rem;
-    font-size: 6rem;
+    padding: 2rem;
+    font-size: 8dvh;
 
     @include respond(big-phone) {
-      font-size: 5rem;
+      padding: 0.7rem 1.3rem;
+      font-size: 7.5dvh;
+    }
+
+    @include respond(small-phone) {
+      padding: 0.2rem 1.2rem;
+      font-size: 6dvh;
     }
 
     @include respond(tab-land-max) {
@@ -36,7 +42,17 @@
   // * Styling for 'Start', 'Enter Minutes', 'Reset' & 'Pause' buttons
   &--scale {
     padding: 1.3rem;
-    font-size: 2.7rem;
+    font-size: 5dvh;
+
+    @include respond(big-phone) {
+      padding: 1rem;
+      font-size: 4dvh;
+    }
+
+    @include respond(small-phone) {
+      padding: 0.7rem;
+      font-size: 3dvh;
+    }
 
     &:hover {
       @include respond(tab-land-max) {

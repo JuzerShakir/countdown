@@ -4,16 +4,15 @@
   align-items: center;
   justify-items: center;
   grid-row-gap: 5dvh;
-  grid-column-gap: 7vw;
+  grid-column-gap: 15vw;
 
-  @include respond(tab-port) {
-    grid-row-gap: 7dvh;
-    grid-column-gap: 5vw;
+  @include respond(big-phone) {
+    grid-column-gap: 10vw;
   }
 
   @include respond(small-phone) {
-    grid-row-gap: 9dvh;
-    grid-column-gap: 3vw;
+    grid-row-gap: 4dvh;
+    grid-column-gap: 7vw;
   }
 }
 
@@ -30,12 +29,15 @@
 
 #mins {
   color: $color-primary-dark;
-  font-size: 15rem;
+  font-size: 30dvh;
   font-weight: 600;
 
-  @include respond(tab-port) {
-    font-size: 17rem;
-    font-weight: 500;
+  @include respond(big-phone) {
+    font-size: 25dvh;
+  }
+
+  @include respond(small-phone) {
+    font-size: 18dvh;
   }
 
   grid-column: center-start;
@@ -45,7 +47,6 @@
 #decrement {
   grid-column: right-start;
   grid-row: 2;
-  justify-self: left;
 }
 
 #start {
@@ -54,13 +55,25 @@
 }
 
 #secs {
-  font-size: 7rem;
-  font-weight: 300;
+  font-size: 15rem;
+  font-weight: 200;
+
+  @include respond(tab-port) {
+    font-size: 12.5rem;
+  }
+
+  @include respond(big-phone) {
+    font-size: 11rem;
+  }
+
+  @include respond(small-phone) {
+    font-size: 7rem;
+  }
+
   color: $color-primary;
 
   grid-column: right-start;
   grid-row: 2;
-  justify-self: left;
 }
 
 #pause {

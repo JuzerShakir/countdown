@@ -6,11 +6,11 @@
   grid-row-gap: 5dvh;
   grid-column-gap: 15vw;
 
-  @include respond(big-phone) {
+  @include respond(phone-land) {
     grid-column-gap: 10vw;
   }
 
-  @include respond(small-phone) {
+  @include respond(phone-port) {
     grid-row-gap: 4dvh;
     grid-column-gap: 7vw;
   }
@@ -43,11 +43,11 @@
     font-size: 15dvh;
   }
 
-  @include respond(big-phone) {
+  @include respond(phone-land) {
     font-size: 12dvh;
   }
 
-  @include respond(small-phone) {
+  @include respond(phone-port) {
     font-size: 9dvh;
   }
 
@@ -81,11 +81,11 @@
     font-size: 7.5dvh;
   }
 
-  @include respond(big-phone) {
+  @include respond(phone-land) {
     font-size: 6dvh;
   }
 
-  @include respond(small-phone) {
+  @include respond(phone-port) {
     font-size: 4.5dvh;
   }
 

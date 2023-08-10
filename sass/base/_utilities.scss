@@ -21,12 +21,12 @@
       font-size: 7.5dvh;
     }
 
-    @include respond(big-phone) {
+    @include respond(phone-land) {
       padding: 0rem 1rem;
       font-size: 6dvh;
     }
 
-    @include respond(small-phone) {
+    @include respond(phone-port) {
       padding: 0 0.5rem;
       font-size: 3.5dvh;
     }
@@ -54,11 +54,11 @@
       font-size: 4dvh;
     }
 
-    @include respond(big-phone) {
+    @include respond(phone-land) {
       font-size: 3dvh;
     }
 
-    @include respond(small-phone) {
+    @include respond(phone-port) {
       padding: 0.8rem;
       font-size: 2.5dvh;
     }

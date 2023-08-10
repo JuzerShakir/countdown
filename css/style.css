@@ -1,13 +1,14 @@
 /*
-0 - 400px:          Small Phone
-400 - 600px:        Big Phone
+0 - 400px:          Phone portrait
+400 - 600px:        Phone Landscape
 600 - 800px:        Tablet portrait
 800 - 1000px:       Tablet landscape
 1000px - 1200px:    Laptop
 1200 - 1800:        is where our normal styles apply
 */
 /*
-- phone
+- phone-port
+- phone-land
 - tab-port
 - tab-land
 - laptop

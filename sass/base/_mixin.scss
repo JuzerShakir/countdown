@@ -1,7 +1,7 @@
 // * MEDIA QUERY MANAGER
 /*
-0 - 400px:          Small Phone
-400 - 600px:        Big Phone
+0 - 400px:          Phone portrait
+400 - 600px:        Phone Landscape
 600 - 800px:        Tablet portrait
 800 - 1000px:       Tablet landscape
 1000px - 1200px:    Laptop
@@ -10,7 +10,8 @@
 
 //  * $breakpoint argument choices:
 /*
-- phone
+- phone-port
+- phone-land
 - tab-port
 - tab-land
 - laptop
@@ -19,12 +20,12 @@
 */
 
 @mixin respond($breakpoint) {
-  @if $breakpoint == small-phone {
+  @if $breakpoint == phone-port {
     @media only screen and (max-width: 25em) {
       @content;
     } //400px
   }
-  @if $breakpoint == big-phone {
+  @if $breakpoint == phone-land {
     @media only screen and (max-width: 37.5em) {
       @content;
     } //600px

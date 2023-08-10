@@ -6,8 +6,6 @@
   grid-row-gap: 5dvh;
   grid-column-gap: 7vw;
 
-  color: $color-primary-dark;
-
   @include respond(tab-port) {
     grid-row-gap: 7dvh;
     grid-column-gap: 5vw;
@@ -20,30 +18,20 @@
 }
 
 #timerEntry {
-  font-size: 2.5rem;
-  color: inherit;
-
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
+  grid-column: center-start;
+  grid-row: 1;
 }
 
 #increment {
-  font-size: 4.5rem;
-  color: inherit;
-
-  @include respond(tab-port) {
-    font-size: 4rem;
-  }
-
   grid-column: left-start;
   grid-row: 2;
   justify-self: right;
 }
 
 #mins {
-  font-size: 20rem;
+  color: $color-primary-dark;
+  font-size: 15rem;
   font-weight: 600;
-  color: inherit;
 
   @include respond(tab-port) {
     font-size: 17rem;
@@ -55,22 +43,12 @@
 }
 
 #decrement {
-  font-size: 4.5rem;
-  color: inherit;
-
-  @include respond(tab-port) {
-    font-size: 4rem;
-  }
-
   grid-column: right-start;
   grid-row: 2;
   justify-self: left;
 }
 
 #start {
-  font-size: 2.5rem;
-  color: inherit;
-
   grid-column: center-start;
   grid-row: 3;
 }
@@ -86,17 +64,11 @@
 }
 
 #pause {
-  font-size: 2.5rem;
-  color: inherit;
-
   grid-column: center-start;
   grid-row: 3;
 }
 
 #reset {
-  font-size: 2.5rem;
-  color: inherit;
-
   grid-column: center-start;
   grid-row: 1;
 }

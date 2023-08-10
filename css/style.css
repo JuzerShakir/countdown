@@ -30,23 +30,31 @@
 
 .btn {
   background-color: #04dfe3;
-  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  color: #0196a6;
   border: none;
-  border-radius: 2rem;
-  padding: 1.8rem 3rem;
+  border-radius: 0;
   cursor: pointer;
   transition: all 0.3s; }
-  @media only screen and (min-width: 62.5em) {
-    .btn--float {
-      filter: drop-shadow(2px 2px 10px #0196a6); }
-      .btn--float:hover {
-        background-color: #005862; }
-      .btn--float:active {
-        filter: drop-shadow(0px 0px 0px #0196a6); } }
-  @media only screen and (min-width: 62.5em) {
-    .btn--scale:hover {
-      font-size: 1.55rem;
-      transform: scale(1.05); } }
+  .btn--float {
+    padding: 1rem 1.5rem;
+    font-size: 6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .btn--float {
+        font-size: 5rem; } }
+    @media only screen and (min-width: 62.5em) {
+      .btn--float {
+        filter: drop-shadow(2px 2px 10px #0196a6); }
+        .btn--float:hover {
+          background-color: #005862; }
+        .btn--float:active {
+          filter: drop-shadow(0px 0px 0px #0196a6); } }
+  .btn--scale {
+    padding: 1.3rem;
+    font-size: 2.7rem; }
+    @media only screen and (min-width: 62.5em) {
+      .btn--scale:hover {
+        transform: scale(1.03); } }
 
 .hidden {
   visibility: hidden; }
@@ -63,7 +71,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Nunito";
+  font-family: "Nunito", sans-serif;
   font-weight: 300;
   line-height: 1.6;
   background-image: linear-gradient(-45deg, #dbe2ef, #3f72af, #112d4e, #033252, #0f4c75, #3282b8, #549ed0);
@@ -90,8 +98,7 @@ body {
   align-items: center;
   justify-items: center;
   grid-row-gap: 5dvh;
-  grid-column-gap: 7vw;
-  color: #0196a6; }
+  grid-column-gap: 7vw; }
   @media only screen and (max-width: 50em) {
     .time {
       grid-row-gap: 7dvh;
@@ -102,25 +109,18 @@ body {
       grid-column-gap: 3vw; } }
 
 #timerEntry {
-  font-size: 2.5rem;
-  color: inherit;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2; }
+  grid-column: center-start;
+  grid-row: 1; }
 
 #increment {
-  font-size: 4.5rem;
-  color: inherit;
   grid-column: left-start;
   grid-row: 2;
   justify-self: right; }
-  @media only screen and (max-width: 50em) {
-    #increment {
-      font-size: 4rem; } }
 
 #mins {
-  font-size: 20rem;
+  color: #0196a6;
+  font-size: 15rem;
   font-weight: 600;
-  color: inherit;
   grid-column: center-start;
   grid-row: 2; }
   @media only screen and (max-width: 50em) {
@@ -129,18 +129,11 @@ body {
       font-weight: 500; } }
 
 #decrement {
-  font-size: 4.5rem;
-  color: inherit;
   grid-column: right-start;
   grid-row: 2;
   justify-self: left; }
-  @media only screen and (max-width: 50em) {
-    #decrement {
-      font-size: 4rem; } }
 
 #start {
-  font-size: 2.5rem;
-  color: inherit;
   grid-column: center-start;
   grid-row: 3; }
 
@@ -153,14 +146,10 @@ body {
   justify-self: left; }
 
 #pause {
-  font-size: 2.5rem;
-  color: inherit;
   grid-column: center-start;
   grid-row: 3; }
 
 #reset {
-  font-size: 2.5rem;
-  color: inherit;
   grid-column: center-start;
   grid-row: 1; }
 

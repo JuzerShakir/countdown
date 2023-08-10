@@ -136,8 +136,7 @@ body {
 
 #increment {
   grid-column: left-start;
-  grid-row: 2;
-  justify-self: right; }
+  grid-row: 2; }
 
 #mins {
   color: #0196a6;
@@ -170,20 +169,26 @@ body {
   grid-row: 3; }
 
 #secs {
-  font-size: 15rem;
+  font-size: 15dvh;
   font-weight: 200;
   color: #04dfe3;
   grid-column: right-start;
   grid-row: 2; }
+  @media only screen and (max-width: 75em) {
+    #secs {
+      font-size: 12.5dvh; } }
+  @media only screen and (max-width: 62.5em) {
+    #secs {
+      font-size: 10dvh; } }
   @media only screen and (max-width: 50em) {
     #secs {
-      font-size: 12.5rem; } }
+      font-size: 7.5dvh; } }
   @media only screen and (max-width: 37.5em) {
     #secs {
-      font-size: 11rem; } }
+      font-size: 6dvh; } }
   @media only screen and (max-width: 25em) {
     #secs {
-      font-size: 7rem; } }
+      font-size: 4.5dvh; } }
 
 #pause {
   grid-column: center-start;

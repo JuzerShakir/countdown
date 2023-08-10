@@ -24,7 +24,6 @@
 #increment {
   grid-column: left-start;
   grid-row: 2;
-  justify-self: right;
 }
 
 #mins {
@@ -67,19 +66,27 @@
 }
 
 #secs {
-  font-size: 15rem;
+  font-size: 15dvh;
   font-weight: 200;
 
+  @include respond(laptop) {
+    font-size: 12.5dvh;
+  }
+
+  @include respond(tab-land) {
+    font-size: 10dvh;
+  }
+
   @include respond(tab-port) {
-    font-size: 12.5rem;
+    font-size: 7.5dvh;
   }
 
   @include respond(big-phone) {
-    font-size: 11rem;
+    font-size: 6dvh;
   }
 
   @include respond(small-phone) {
-    font-size: 7rem;
+    font-size: 4.5dvh;
   }
 
   color: $color-primary;

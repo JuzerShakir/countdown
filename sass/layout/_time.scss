@@ -1,8 +1,10 @@
-.time {
+#time {
   display: grid;
   grid-template-columns: [left-start] 1fr [left-end center-start] max-content [center-end right-start] 1fr [right-end];
+
   align-items: center;
   justify-items: center;
+
   grid-row-gap: 5dvh;
   grid-column-gap: 15vw;
 
@@ -14,102 +16,105 @@
     grid-row-gap: 4dvh;
     grid-column-gap: 7vw;
   }
-}
 
-#timerEntry {
-  grid-column: center-start;
-  grid-row: 1;
-}
+  &__mins {
+    grid-column: center-start;
+    grid-row: 2;
 
-#increment {
-  grid-column: left-start;
-  grid-row: 2;
-}
+    font-size: 30dvh;
+    font-weight: 600;
+    color: $color-primary-dark;
 
-#mins {
-  color: $color-primary-dark;
-  font-size: 30dvh;
-  font-weight: 600;
+    @include respond(laptop) {
+      font-size: 25dvh;
+    }
 
-  @include respond(laptop) {
-    font-size: 25dvh;
+    @include respond(tab-land) {
+      font-size: 20dvh;
+    }
+
+    @include respond(tab-port) {
+      font-size: 15dvh;
+    }
+
+    @include respond(phone-land) {
+      font-size: 12dvh;
+    }
+
+    @include respond(phone-port) {
+      font-size: 9dvh;
+    }
   }
 
-  @include respond(tab-land) {
-    font-size: 20dvh;
-  }
+  &__secs {
+    grid-column: right-start;
+    grid-row: 2;
 
-  @include respond(tab-port) {
     font-size: 15dvh;
+    font-weight: 200;
+    color: $color-primary;
+
+    @include respond(laptop) {
+      font-size: 12.5dvh;
+    }
+
+    @include respond(tab-land) {
+      font-size: 10dvh;
+    }
+
+    @include respond(tab-port) {
+      font-size: 7.5dvh;
+    }
+
+    @include respond(phone-land) {
+      font-size: 6dvh;
+    }
+
+    @include respond(phone-port) {
+      font-size: 4.5dvh;
+    }
   }
 
-  @include respond(phone-land) {
-    font-size: 12dvh;
+  &__enter,
+  &__reset {
+    grid-column: center-start;
+    grid-row: 1;
   }
 
-  @include respond(phone-port) {
-    font-size: 9dvh;
+  &__increment {
+    grid-column: left-start;
+    grid-row: 2;
   }
 
-  grid-column: center-start;
-  grid-row: 2;
-}
-
-#decrement {
-  grid-column: right-start;
-  grid-row: 2;
-}
-
-#start {
-  grid-column: center-start;
-  grid-row: 3;
-}
-
-#secs {
-  font-size: 15dvh;
-  font-weight: 200;
-
-  @include respond(laptop) {
-    font-size: 12.5dvh;
+  &__decrement {
+    grid-column: right-start;
+    grid-row: 2;
   }
 
-  @include respond(tab-land) {
-    font-size: 10dvh;
+  &__start,
+  &__pause {
+    grid-column: center-start;
+    grid-row: 3;
   }
 
-  @include respond(tab-port) {
-    font-size: 7.5dvh;
+  &__decrement,
+  &__increment {
+    @include button(float);
   }
 
-  @include respond(phone-land) {
-    font-size: 6dvh;
+  &__enter,
+  &__reset,
+  &__pause,
+  &__start {
+    @include button(scale);
   }
 
-  @include respond(phone-port) {
-    font-size: 4.5dvh;
+  &__mins,
+  &__increment,
+  &__decrement,
+  &__secs,
+  &__enter,
+  &__start {
+    animation: fadeInAnimation 3s;
   }
-
-  color: $color-primary;
-
-  grid-column: right-start;
-  grid-row: 2;
-}
-
-#pause {
-  grid-column: center-start;
-  grid-row: 3;
-}
-
-#reset {
-  grid-column: center-start;
-  grid-row: 1;
-}
-
-#mins,
-#increment,
-#decrement,
-#secs,
-#timerEntry,
-#start {
-  animation: fadeInAnimation 3s;
 }

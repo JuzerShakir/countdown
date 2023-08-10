@@ -1,14 +1,14 @@
 "use strict";
 
 // ? Extracting all HTML elements to work with
-const timerEntry = document.getElementById("timerEntry");
-const incrementButton = document.getElementById("increment");
-const decrementButton = document.getElementById("decrement");
-const startBtn = document.getElementById("start");
-const minsDisplay = document.getElementById("mins");
-const secsDisplay = document.getElementById("secs");
-const pauseResumeButton = document.getElementById("pause");
-const resetButton = document.getElementById("reset");
+const timerEntry = document.getElementById("time__enter");
+const incrementButton = document.getElementById("time__increment");
+const decrementButton = document.getElementById("time__decrement");
+const startBtn = document.getElementById("time__start");
+const minsDisplay = document.getElementById("time__mins");
+const secsDisplay = document.getElementById("time__secs");
+const pauseResumeButton = document.getElementById("time__pause");
+const resetButton = document.getElementById("time__reset");
 
 // ? Make audio available
 const timesUp = new Audio("alerts/times_up.wav");
@@ -18,11 +18,11 @@ const timerTicking = new Audio("alerts/timer_ticking.wav");
 let timerOn = false;
 let paused = false;
 let countdown;
-// * Setting up mins by default to 5 and secs for countdown
+
 let mins = 0;
 let secs = 0;
 
-// * sets and displays minutes and sets seconds
+// * Setting up default for mins & secs for countdown
 function setShowMins(m = 5) {
   mins = m;
   minsDisplay.textContent = mins;

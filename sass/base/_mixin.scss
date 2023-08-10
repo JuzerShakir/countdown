@@ -51,3 +51,77 @@
     } //1200px
   }
 }
+
+@mixin button($type) {
+  background-color: $color-primary;
+
+  font-family: "Josefin Sans", sans-serif;
+  color: $color-primary-dark;
+
+  border: none;
+  border-radius: 0;
+
+  cursor: pointer;
+
+  transition: all 0.3s;
+
+  // * Styling for 'Start', 'Enter Minutes', 'Reset' & 'Pause' buttons
+  @if $type == float {
+    padding: 2rem;
+    font-size: 8dvh;
+
+    @include respond(tab-port) {
+      padding: 0.4rem 1.3rem;
+      font-size: 7.5dvh;
+    }
+
+    @include respond(phone-land) {
+      padding: 0rem 1rem;
+      font-size: 6dvh;
+    }
+
+    @include respond(phone-port) {
+      padding: 0 0.5rem;
+      font-size: 3.5dvh;
+    }
+
+    @include respond(tab-land-max) {
+      filter: drop-shadow(2px 2px 10px $color-primary-dark);
+
+      &:hover {
+        background-color: $color-primary-darker;
+      }
+
+      &:active {
+        filter: drop-shadow(0px 0px 0px $color-primary-dark);
+      }
+    }
+  }
+
+  // * Styling for + & - buttons
+
+  @if $type == scale {
+    padding: 1.3rem;
+    font-size: 5dvh;
+
+    @include respond(tab-port) {
+      padding: 1rem;
+      font-size: 4dvh;
+    }
+
+    @include respond(phone-land) {
+      font-size: 3dvh;
+    }
+
+    @include respond(phone-port) {
+      padding: 0.8rem;
+      font-size: 2.5dvh;
+    }
+
+    &:hover {
+      @include respond(tab-land-max) {
+        transform: scale(1.03);
+      }
+    }
+  }
+}

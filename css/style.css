@@ -72,17 +72,19 @@ body {
   background-size: 300% 300%;
   animation: gradient 40s ease infinite; }
 
-.heading {
-  display: flex;
-  justify-content: center;
-  margin: 5rem 0; }
-  .heading h1 {
-    font-size: 5rem;
-    font-weight: 700;
-    background-image: linear-gradient(to right, #e3fdfd, #cbf1f5, #a6e3e9, #71c9ce);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; }
+.container {
+  display: grid;
+  grid-template-rows: 10dvh calc(100dvh - 10dvh);
+  justify-items: center;
+  align-items: center; }
+
+.heading h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #e3fdfd, #cbf1f5, #a6e3e9, #71c9ce);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; }
 
 .time {
   display: grid;
@@ -94,12 +96,12 @@ body {
   color: #0196a6; }
   @media only screen and (max-width: 50em) {
     .time {
-      grid-column-gap: 5vw;
-      grid-row-gap: 7dvh; } }
+      grid-row-gap: 7dvh;
+      grid-column-gap: 5vw; } }
   @media only screen and (max-width: 25em) {
     .time {
-      grid-column-gap: 3vw;
-      grid-row-gap: 9dvh; } }
+      grid-row-gap: 9dvh;
+      grid-column-gap: 3vw; } }
 
 #timerEntry {
   font-size: 2.5rem;

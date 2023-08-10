@@ -32,3 +32,10 @@ body {
   background-size: 300% 300%;
   animation: gradient 40s ease infinite;
 }
+
+.container {
+  display: grid;
+  grid-template-rows: 10dvh calc(100dvh - 10dvh);
+  justify-items: center;
+  align-items: center;
+}

@@ -1,5 +1,22 @@
 .time {
+  display: grid;
+  grid-template-columns: [left-start] 1fr [left-end center-start] max-content [center-end right-start] 1fr [right-end];
+  align-items: center;
+  justify-items: center;
+  grid-row-gap: 5dvh;
+  grid-column-gap: 7vw;
+
   color: $color-primary-dark;
+
+  @include respond(tab-port) {
+    grid-column-gap: 5vw;
+    grid-row-gap: 7dvh;
+  }
+
+  @include respond(small-phone) {
+    grid-column-gap: 3vw;
+    grid-row-gap: 9dvh;
+  }
 }
 
 #timerEntry {

@@ -41,7 +41,8 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  user-select: none; }
 
 body {
   font-family: "Nunito", sans-serif;

@@ -188,5 +188,5 @@ body {
     @media only screen and (min-width: 62.5em) {
       #time__enter:hover, #time__reset:hover, #time__pause:hover, #time__start:hover {
         transform: scale(1.03); } }
-  #time__mins, #time__increment, #time__decrement, #time__secs, #time__enter, #time__start {
+  #time > * {
     animation: fadeInAnimation 3s; }

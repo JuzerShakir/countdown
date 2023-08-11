@@ -109,12 +109,7 @@
     @include button(scale);
   }
 
-  &__mins,
-  &__increment,
-  &__decrement,
-  &__secs,
-  &__enter,
-  &__start {
+  & > * {
     animation: fadeInAnimation 3s;
   }
 }
